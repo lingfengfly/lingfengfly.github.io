@@ -3,12 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://lingfengfly.github.io/categories/</loc>
+    <loc>https://lingfengfly.github.io/post/first/</loc>
+    <lastmod>2019-06-04T12:07:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lingfengfly.github.io/post/</loc>
+    <lastmod>2019-06-04T12:07:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://lingfengfly.github.io/</loc>
+    <lastmod>2019-06-04T12:07:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://lingfengfly.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
