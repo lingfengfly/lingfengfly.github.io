@@ -1,70 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Su&#39;s Blog</title>
-<meta name="description" content="Learning, summary and sharing knowledge">
-<meta name="generator" content="Hugo 0.65.3" />
-<link href="https://lingfengfly.github.io/index.xml" rel="alternate" type="application/rss+xml">
-<link rel="canonical" href="https://lingfengfly.github.io/post/finite-volume-method/about/">
-<link rel="stylesheet" href="https://lingfengfly.github.io/css/theme.min.css">
-<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-<link rel="stylesheet" href="https://lingfengfly.github.io/css/chroma.min.css">
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-<script src="https://lingfengfly.github.io/js/functions.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
-<script src="https://lingfengfly.github.io/js/jquery.backtothetop/jquery.backtothetop.min.js"></script></head>
-<body>
-<div class="container"><header>
-<h1>Su&#39;s Blog</h1>
+<html>
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+   &ndash; Su&#39;s Blog
 
-<p class="description">Learning, summary and sharing knowledge</p>
+    </title>
+    
+    
+    <meta name="description" property="og:description" content="有限体积法（Fininte Volume Method, FVM）是一种基于守恒律的数值解法。 FVM将求解区域离散为网格（可以是结构化也可以是非结构化类型），然后将其划|Learning, summary and sharing knowledge">
+    
 
-</header>
+    <meta name="apple-mobile-web-app-title" content="Su&#39;s Blog">
+    
+    
+    
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@">
+    <meta name="twitter:title" content="Su&#39;s Blog">
+    <meta name="twitter:description" content="有限体积法（Fininte Volume Method, FVM）是一种基于守恒律的数值解法。 FVM将求解区域离散为网格（可以是结构化也可以是非结构化类型），然后将其划|Learning, summary and sharing knowledge">
+    <meta name="twitter:image" content="https://lingfengfly.github.io/twitter-card.png">
+    
 
-<div class="content-container">
-<main><h1></h1><p>有限体积法（Fininte Volume Method, FVM）是一种基于守恒律的数值解法。</p>
+
+    <link rel="stylesheet" href="/assets/syntax.css">
+    <link rel="stylesheet" href="/assets/primer-build.css">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+
+
+  <body class="bg-gray">
+    <div id="holy" class="container-lg bg-white h-100">
+
+      <div id="header" class="px-1 bg-white">
+        <nav class="UnderlineNav UnderlineNav--right px-2">
+  <a class="UnderlineNav-actions muted-link h2" href="https://lingfengfly.github.io/">
+    Su&#39;s Blog
+  </a>
+
+  
+  
+</nav>
+
+      </div>
+
+      <div role="main" id="main" class="holy-main markdown-body px-4 bg-white">
+        
+
+<div class="Subhead">
+  <div class="Subhead-heading">
+    <div class="h1 mt-3 mb-1"></div>
+  </div>
+  <div class="Subhead-description">
+    
+
+
+
+
+
+
+    
+    <div class="float-md-right">
+      <span title="Lastmod: 2020-03-01. Published at: 0001-01-01.">
+        
+          Lastmod: 2020-03-01
+        
+      </span>
+    </div>
+    
+  </div>
+</div>
+<article>
+  
+  <section class="pb-6 mb-3 border-bottom">
+    <p>有限体积法（Fininte Volume Method, FVM）是一种基于守恒律的数值解法。</p>
 <blockquote>
 <p>FVM将求解区域离散为网格（可以是结构化也可以是非结构化类型），然后将其划分为一系列不重合的控制体，对待解的微分方程在单个控制体内进行体积分，利用斯托克斯定理得到微分方程相应的积分形式，然后对方程进行离散求解。</p>
 </blockquote>
-<div class="edit-meta">
-Last updated on 1 Mar 2020
 
+  </section>
 
-<br></div><nav class="pagination"><a class="nav nav-prev" href="/post/about/" title="About"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - About</a>
-<a class="nav nav-next" href="/post/about/" title="About">Next - About <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
-</footer>
-</main><div class="sidebar">
-<nav>
-<ul>
-<li class=""><a href="https://lingfengfly.github.io/">Home</a></li>
+  <section>
+    
+      
+    
+  </section>
+</article>
 
-<li class="parent"><a href="/post/">Posts</a>
-<ul class="sub-menu">
-<li class=""><a href="/post/about/">About</a></li>
-<li class="active"><a href="/post/finite-volume-method/about/"></a></li>
-</ul>
+      </div>
+
+      <div id="side" class="pr-1 bg-white">
+        <aside class="pr-3">
+          
   
-</li>
-</ul>
-</nav>
+    <div id="toc" class="Box Box--blue mb-3">
+      <b></b><nav id="TableOfContents"></nav></div>
+  
+
+  
+    
+    
+      <div>
+        
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        
+
+        
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button&size=small&mobile_iframe=true&width=61&height=20&appId" width="61" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        
+
+        
+
+        
+          <a data-pocket-label="pocket" data-pocket-count="none" class="pocket-btn" data-lang="en"></a>
+          <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+        
+
+      </div>
+    
+  
+
+        </aside>
+      </div>
+
+      <div id="footer" class="pt-2 pb-3 bg-white text-center">
+        
+
+  <span class="text-small text-gray">
+    ©lingfengfly 2015-2020 &middot; 
+
+    Powered by the
+    <a href="https://github.com/qqhann/hugo-primer" class="link-gray-dark">Hugo-Primer</a> theme for
+    <a href="https://gohugo.io" class="link-gray-dark">Hugo</a>.
+  </span>
 
 
-<div class="sidebar-footer"></div>
-</div>
-</div><a href="#" id="backtothetop-fixed" class="backtothetop"
- data-backtothetop-duration="600"
- data-backtothetop-easing="easeOutQuart"
- data-backtothetop-fixed-fadeIn="1000"
- data-backtothetop-fixed-fadeOut="1000"
- data-backtothetop-fixed-bottom="10"
- data-backtothetop-fixed-right="20">
-<span class="fa-layers fa-fw">
-<i class="fas fa-circle"></i>
-<i class="fas fa-arrow-circle-up"></i>
-</span></a>
-</div>
-</body>
+      </div>
+    </div>
+
+    
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
+    
+  </body>
 </html>
