@@ -22,12 +22,12 @@
     </item>
     
     <item>
-      <title>First</title>
-      <link>https://lingfengfly.github.io/post/first/</link>
-      <pubDate>Tue, 04 Jun 2019 06:48:26 +0800</pubDate>
+      <title></title>
+      <link>https://lingfengfly.github.io/post/finite-volume-method/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lingfengfly.github.io/post/first/</guid>
-      <description>Hello Hugo  aaa bbb ccc  </description>
+      <guid>https://lingfengfly.github.io/post/finite-volume-method/about/</guid>
+      <description>有限体积法（Fininte Volume Method, FVM）是一种基于守恒律的数值解法。 FVM将求解区域离散为网格（可以是结构化也可以是非结构化类型），然后将其划</description>
     </item>
     
   </channel>
