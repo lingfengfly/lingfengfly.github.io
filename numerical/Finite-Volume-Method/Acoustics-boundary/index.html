@@ -12,7 +12,7 @@ $$ p_t&#43;K_0u_x=0 $$ $$ \rho_0u_t&#43;p_x=0, $$ with a variety of different bo
 We want to impose nonreflectiong boundary conditions (absorbing boundary conditions) at points $x=a$ and $x=b$ that do not introduce spurious reflections of the outgoing acoustic waves." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://lingfengfly.github.io/numerical/Finite-Volume-Method/Acoustics-boundary/" />
-<meta property="article:modified_time" content="2020-03-02T16:42:09+08:00" />
+<meta property="article:modified_time" content="2020-03-02T19:10:58+08:00" />
 <title>Acoustics boundary | Su&#39;s Blog</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 
@@ -20,7 +20,7 @@ We want to impose nonreflectiong boundary conditions (absorbing boundary conditi
 <link rel="stylesheet" href="/book.min.829f7602029a29a47bf1b0c9c4bb52982089a6d13558c9433d3c8b7e38c8b3b8.css" integrity="sha256-gp92AgKaKaR78bDJxLtSmCCJptE1WMlDPTyLfjjIs7g=">
 
 
-<script defer src="/en.search.min.654d0fd86865a96dad37a413e82f5c5c2ccc8af72961f6392ae93c65b5f03b21.js" integrity="sha256-ZU0P2GhlqW2tN6QT6C9cXCzMivcpYfY5Kuk8ZbXwOyE="></script>
+<script defer src="/en.search.min.33023c07830c2d00859948f8ea0a99131bd8a192cfedb897793fedb85357775e.js" integrity="sha256-MwI8B4MMLQCFmUj46gqZExvYoZLP7biXeT/tuFNXd14="></script>
 
 <script type="application/javascript">
 var doNotTrack = false;
@@ -198,17 +198,17 @@ $$u(a,t)=0,$$</p>
 Walls</font><br>
 For very small-amplitude motions we can use this boundary condition 
 $$u(a,t)=U(t),$$
-to simulate the vibrating wall. We can implement this by setting the following ghost-cell values:
-$$ for\ Q_0: p_0=p_1,\  u_0=2U(t_n)-u_1, for\ Q_{-1}: p_{-1}=p_2,\  u_{-1}=2U(t_n)-u_2,$$</p>
-<p>$$
-\begin{equation}\begin{split}
-H(Y|X)&amp;=\sum_{x\in X} p(x)H(Y|X)\<br>
-&amp;=-\sum_{x\in X} p(x)\sum_{y\in Y}p(y|x)\log p(y|x)\<br>
-&amp;=-\sum_{x\in X} \sum_{y\in Y}p(y,x)\log p(y|x)
-\end{split}\end{equation}
-$$</p>
-<p>$$aaa=bb \<br>
-ccs=ss$$</p>
+to simulate the vibrating wall. We can implement this by setting the following ghost-cell values:</p>
+<div>
+$$
+\left.
+\begin{array}{l}
+\text{for}&Q_0:\ p_0=p_1,\ u_0=2U(t_n)-u_1,\\
+\text{for}&Q_{-1}:\ p_{-1}=p_2,\ u_{-1}=2U(t_n)-u_2.
+\end{array}
+\right.
+$$
+</div>
 </article>
  
       

@@ -43,5 +43,14 @@ $$ p_t+K_0u_x=0 $$ $$ \rho_0u_t+p_x=0, $$ with a variety of different boundary c
 We want to impose nonreflectiong boundary conditions (absorbing boundary conditions) at points $x=a$ and $x=b$ that do not introduce spurious reflections of the outgoing acoustic waves.</description>
     </item>
     
+    <item>
+      <title>Convergence</title>
+      <link>https://lingfengfly.github.io/numerical/Finite-Volume-Method/Convergence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lingfengfly.github.io/numerical/Finite-Volume-Method/Convergence/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
