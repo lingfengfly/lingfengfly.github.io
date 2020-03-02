@@ -9,7 +9,7 @@
 $$\begin{equation}q^n_i=\frac {1}{\Delta x}\int_{x_{i-1/2}}^{x_{i&#43;1/2}} q(x,t_n) \,{\rm d}x.\end{equation}$$If the function $q(x,t)$ is sufficiently smooth, then the pointwise value agrees with the cell average to $\cal O(\Delta x^2)$. It is reasonable to assume that the ratio $\Delta t/\Delta x$ is fixed. Then we can speak of letting $\Delta t \to 0$ to refine the grid, and speak of convergence with order s if the errors vanish like $\cal O(\Delta t^s)$ or $\cal O(\Delta x^s)$." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://lingfengfly.github.io/numerical/Finite-Volume-Method/Convergence/" />
-<meta property="article:modified_time" content="2020-03-02T23:44:07+08:00" />
+<meta property="article:modified_time" content="2020-03-02T23:47:12+08:00" />
 <title>Convergence | Su&#39;s Blog</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 
@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="/book.min.829f7602029a29a47bf1b0c9c4bb52982089a6d13558c9433d3c8b7e38c8b3b8.css" integrity="sha256-gp92AgKaKaR78bDJxLtSmCCJptE1WMlDPTyLfjjIs7g=">
 
 
-<script defer src="/en.search.min.696c46d532761008fb3e0909c293dbefc133140f62f5cef608d4c43ce3437232.js" integrity="sha256-aWxG1TJ2EAj7PgkJwpPb78EzFA9i9c72CNTEPONDcjI="></script>
+<script defer src="/en.search.min.d06fc8a3867364f5806b565a2400551baa5c37aff2b965f10c41660e7367ed1a.js" integrity="sha256-0G/Io4ZzZPWAa1ZaJABVG6pcN6/yuWXxDEFmDnNn7Ro="></script>
 
 <script type="application/javascript">
 var doNotTrack = false;
@@ -184,11 +184,11 @@ $$
 $$
 </div>
 <p>Note that, commmonly, there is no $\Delta x$ in norms.
-We say that the method is convergent at time <em>T</em> in the norm $|\cdot|$ if
-$$
+We say that the method is convergent at time <em>T</em> in the norm $|\cdot|$ if</p>
+<p>$$
 \lim_{\Delta t \to 0_{N\Delta t=T}}|E^N|=0.
-$$ 
-The method is said to be accurate of *order s* if
+$$</p>
+<p>The method is said to be accurate of <em>order s</em> if
 $$
 |E^N|=\cal O(\Delta t^s)\quad \text{as }\Delta t\to 0.
 $$ 
