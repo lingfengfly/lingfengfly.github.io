@@ -32,24 +32,20 @@
     
     <item>
       <title></title>
+      <link>https://lingfengfly.github.io/numerical/Finite-Volume-Method/Acoustics-boundary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lingfengfly.github.io/numerical/Finite-Volume-Method/Acoustics-boundary/</guid>
+      <description>The systems of equations, such as acoustics, can have positive and negative eigenvalues, so that each boundary will typiccally have both incoming and outcoming characteristics. Consider the acoustics equations $$ p_t+K_0u_x=0 $$ $$ \rho_0u_t+p_x=0, $$ with a variety of different boundary conditions. 1.Nonreflecting Boundary Conditions We want to impose nonreflectiong boundary conditions (absorbing boundary conditions) at points $x=a$ and $x=b$ that do not introduce spurious reflections of the outgoing acoustic</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://lingfengfly.github.io/posts/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://lingfengfly.github.io/posts/about/</guid>
       <description>write about something!</description>
-    </item>
-    
-    <item>
-      <title>Acoustics boundary</title>
-      <link>https://lingfengfly.github.io/numerical/Finite-Volume-Method/Acoustics-boundary/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://lingfengfly.github.io/numerical/Finite-Volume-Method/Acoustics-boundary/</guid>
-      <description>The systems of equations, such as acoustics, can have positive and negative eigenvalues, so that each boundary will typiccally have both incoming and outcoming characteristics.
-Consider the acoustics equations
-$$ p_t+K_0u_x=0 $$ $$ \rho_0u_t+p_x=0, $$ with a variety of different boundary conditions.
- Nonreflecting Boundary Conditions
-We want to impose nonreflectiong boundary conditions (absorbing boundary conditions) at points $x=a$ and $x=b$ that do not introduce spurious reflections of the outgoing acoustic waves.</description>
     </item>
     
   </channel>
