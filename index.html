@@ -36,6 +36,7 @@ Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
 
+
   
 </head>
 
@@ -115,6 +116,14 @@ https://github.com/alex-shpak/hugo-book
   </label>
 </div>
 
+.hasJax{
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    /*color: #515151;*/
+} 
+
 
   
     <input type="checkbox" class="hidden" id="toc-control" />
@@ -148,6 +157,23 @@ https://github.com/alex-shpak/hugo-book
 
 
 </div>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            displayMath: [['$$','$$'], ['\[','\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            TeX: {
+                equationNumbers: { autoNumber: "AMS" },
+                extensions: ["AMSmath.js", "AMSsymbols.js"]
+            }
+        }
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
  
           
