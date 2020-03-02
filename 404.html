@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="/book.min.829f7602029a29a47bf1b0c9c4bb52982089a6d13558c9433d3c8b7e38c8b3b8.css" integrity="sha256-gp92AgKaKaR78bDJxLtSmCCJptE1WMlDPTyLfjjIs7g=">
 
 
-<script defer src="/en.search.min.dfb5b189e9cc69fb72eccda09c411944a05f9cdc5945ec8149cb7970b854bf6f.js" integrity="sha256-37WxienMafty7M2gnEEZRKBfnNxZReyBSct5cLhUv28="></script>
+<script defer src="/en.search.min.654d0fd86865a96dad37a413e82f5c5c2ccc8af72961f6392ae93c65b5f03b21.js" integrity="sha256-ZU0P2GhlqW2tN6QT6C9cXCzMivcpYfY5Kuk8ZbXwOyE="></script>
 
 <script type="application/javascript">
 var doNotTrack = false;
@@ -35,6 +35,41 @@ https://github.com/alex-shpak/hugo-book
 -->
 
 
+<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
   
 </head>
 

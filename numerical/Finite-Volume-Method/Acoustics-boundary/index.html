@@ -4,19 +4,23 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Acoustics Boundary"><meta property="og:title" content="" />
-<meta property="og:description" content="The systems of equations, such as acoustics, can have positive and negative eigenvalues, so that each boundary will typiccally have both incoming and outcoming characteristics. Consider the acoustics equations $$ p_t&#43;K_0u_x=0 $$ $$ \rho_0u_t&#43;p_x=0, $$ with a variety of different boundary conditions. 1.Nonreflecting Boundary Conditions We want to impose nonreflectiong boundary conditions (absorbing boundary conditions) at points $x=a$ and $x=b$ that do not introduce spurious reflections of the outgoing acoustic" />
+<meta name="description" content="Acoustics boundary"><meta property="og:title" content="Acoustics boundary" />
+<meta property="og:description" content="The systems of equations, such as acoustics, can have positive and negative eigenvalues, so that each boundary will typiccally have both incoming and outcoming characteristics.
+Consider the acoustics equations
+$$ p_t&#43;K_0u_x=0 $$ $$ \rho_0u_t&#43;p_x=0, $$ with a variety of different boundary conditions.
+1.Nonreflecting Boundary Conditions
+We want to impose nonreflectiong boundary conditions (absorbing boundary conditions) at points $x=a$ and $x=b$ that do not introduce spurious reflections of the outgoing acoustic waves." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://lingfengfly.github.io/numerical/Finite-Volume-Method/Acoustics-boundary/" />
-<meta property="article:modified_time" content="2020-03-02T11:13:53+08:00" />
-<title>Acoustics Boundary | Su&#39;s Blog</title>
+<meta property="article:modified_time" content="2020-03-02T16:42:09+08:00" />
+<title>Acoustics boundary | Su&#39;s Blog</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 
 
 <link rel="stylesheet" href="/book.min.829f7602029a29a47bf1b0c9c4bb52982089a6d13558c9433d3c8b7e38c8b3b8.css" integrity="sha256-gp92AgKaKaR78bDJxLtSmCCJptE1WMlDPTyLfjjIs7g=">
 
 
-<script defer src="/en.search.min.dfb5b189e9cc69fb72eccda09c411944a05f9cdc5945ec8149cb7970b854bf6f.js" integrity="sha256-37WxienMafty7M2gnEEZRKBfnNxZReyBSct5cLhUv28="></script>
+<script defer src="/en.search.min.654d0fd86865a96dad37a413e82f5c5c2ccc8af72961f6392ae93c65b5f03b21.js" integrity="sha256-ZU0P2GhlqW2tN6QT6C9cXCzMivcpYfY5Kuk8ZbXwOyE="></script>
 
 <script type="application/javascript">
 var doNotTrack = false;
@@ -35,6 +39,41 @@ https://github.com/alex-shpak/hugo-book
 -->
 
 
+<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
   
 </head>
 
@@ -107,20 +146,13 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Acoustics Boundary</strong>
+  <strong>Acoustics boundary</strong>
 
   <label for="toc-control">
     <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
   </label>
 </div>
 
-.hasJax{
-    font: inherit;
-    font-size: 100%;
-    background: inherit;
-    border: inherit;
-    /*color: #515151;*/
-} 
 
 
   
@@ -139,14 +171,44 @@ https://github.com/alex-shpak/hugo-book
       
   <article class="markdown"><p>The systems of equations, such as acoustics, can have positive and negative eigenvalues, so that each boundary will typiccally have both incoming and outcoming characteristics.<br>
 Consider the acoustics equations<br>
-<!-- raw HTML omitted --> 
 $$ p_t+K_0u_x=0 $$
 $$ \rho_0u_t+p_x=0, $$ 
-<!-- raw HTML omitted -->
 with a variety of different boundary conditions.</p>
-<p>1.Nonreflecting Boundary Conditions<br>
-We want to impose nonreflectiong boundary conditions (absorbing boundary conditions) at points $x=a$ and $x=b$ that do not introduce spurious reflections of the outgoing acoustic waves.</p>
-<p><!-- raw HTML omitted --> 我是黑体，绿色，尺寸为10 <!-- raw HTML omitted --></p>
+<p><font color=k size=4>1.Nonreflecting Boundary Conditions</font><br>
+We want to impose nonreflectiong boundary conditions (absorbing boundary conditions) at points $x=a$ and $x=b$ that do not introduce spurious reflections of the outgoing acoustic waves. We can simply set 
+$$ Q_0^n=Q_1^n,\ Q_{-1}^n=Q_1^n $$ 
+in each time step.</p>
+<p><font color=k size=4>2.Incoming Waves</font><br>
+We want to impose the boundary condition
+$$ \omega^2(a,t)=sin(\omega t) $$
+as the incoming signal, together with nonreflection of any outgoing signal that has been generated within the domain. If we decompose $Q_1$ into $Q_1=W_1^1r^1+W_1^2r^2$, then the ghost cell value $Q_0$ should be set as
+$$Q_0=W_1^1r^1+sin(\omega (t_n+\Delta x/2c_0))r^2.$$
+We could first extrapolate the whole vector $Q$ and then reset the $\omega^2 $ compenent, 
+setting
+$$Q_0=Q_1+(sin(\omega (t_n+\Delta x/2c_0))-W_1^2)r^2.$$
+For a larger systems of <em>m</em> equations, we want to impose an incoming wave in only one characteristic family, e.g.,
+$$\omega_j(a,t)=g_0(t),$$
+wit some <em>j</em>. Then we could set 
+$$Q_0=Q_1+[g_0(t_n+\Delta x/2\lambda^j)-W_1^j]r^j,$$
+where $W_1^j=l^jQ_1$ is the eigen-coefficient of $r^j$ in $Q_1$ and $\lambda^j$ is the corresponding eigen-value.</p>
+<p><font color=k size=4>3.Solid Walls</font><br>
+For a solid wall at $x=a$ this is 
+$$u(a,t)=0,$$</p>
+<p><font color=k size=4>4.Oscillating
+Walls</font><br>
+For very small-amplitude motions we can use this boundary condition 
+$$u(a,t)=U(t),$$
+to simulate the vibrating wall. We can implement this by setting the following ghost-cell values:
+$$ for\ Q_0: p_0=p_1,\  u_0=2U(t_n)-u_1, for\ Q_{-1}: p_{-1}=p_2,\  u_{-1}=2U(t_n)-u_2,$$</p>
+<p>$$
+\begin{equation}\begin{split}
+H(Y|X)&amp;=\sum_{x\in X} p(x)H(Y|X)\<br>
+&amp;=-\sum_{x\in X} p(x)\sum_{y\in Y}p(y|x)\log p(y|x)\<br>
+&amp;=-\sum_{x\in X} \sum_{y\in Y}p(y,x)\log p(y|x)
+\end{split}\end{equation}
+$$</p>
+<p>$$aaa=bb \<br>
+ccs=ss$$</p>
 </article>
  
       
@@ -161,22 +223,6 @@ We want to impose nonreflectiong boundary conditions (absorbing boundary conditi
 
 </div>
 
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [['$','$'], ['\\(','\\)']],
-            displayMath: [['$$','$$'], ['\[','\]']],
-            processEscapes: true,
-            processEnvironments: true,
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            TeX: {
-                equationNumbers: { autoNumber: "AMS" },
-                extensions: ["AMSmath.js", "AMSsymbols.js"]
-            }
-        }
-    });
-</script>
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
  
           
