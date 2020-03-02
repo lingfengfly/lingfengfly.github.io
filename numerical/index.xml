@@ -50,7 +50,7 @@ We want to impose nonreflectiong boundary conditions (absorbing boundary conditi
       
       <guid>https://lingfengfly.github.io/numerical/Finite-Volume-Method/Convergence/</guid>
       <description>For a finite volume method, we might want to compare $Q^n_1$ with
-$$\begin{equation}q^n_i=\frac {1}{\Delta x}\int_{x_{i-1/2}}^{x_{i+1/2}} q(x,t_n) \,{\rm d}x.\end{equation}$$If the function $q(x,t)$ is sufficiently smooth, then the pointwise value agrees with the cell average to $\cal O(\Delta x^2)$. It is reasonable to assume that the ratio $\Delta t/\Delta x$ is fixed. Then we can speak of letting $\Delta t \to 0$ to refine the grid, and speak of convergence with *order s* if the errors vanish like $\cal O(\Delta t^s)$ or $\cal O(\Delta x^s)$.</description>
+$$\begin{equation}q^n_i=\frac {1}{\Delta x}\int_{x_{i-1/2}}^{x_{i+1/2}} q(x,t_n) \,{\rm d}x.\end{equation}$$If the function $q(x,t)$ is sufficiently smooth, then the pointwise value agrees with the cell average to $\cal O(\Delta x^2)$. It is reasonable to assume that the ratio $\Delta t/\Delta x$ is fixed. Then we can speak of letting $\Delta t \to 0$ to refine the grid, and speak of convergence with order s if the errors vanish like $\cal O(\Delta t^s)$ or $\cal O(\Delta x^s)$.</description>
     </item>
     
   </channel>
